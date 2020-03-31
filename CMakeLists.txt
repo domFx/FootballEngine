@@ -4,7 +4,9 @@ project(FootballEngine VERSION 0.1.0)
 # Source files
 set(SRC_DIR "src/FootballEngine")
 #set(LIB_DIR "${CMAKE_CURRENT_SOURCE_DIR}/libraries")
-set(SOURCES "${SRC_DIR}/main.cpp")
+# set(SOURCES "${SRC_DIR}/Main.cpp")
+
+file(GLOB SOURCES ${SRC_DIR}/*.h ${SRC_DIR}/*.cpp)
 
 # Main Executable
 add_executable(${PROJECT_NAME} ${SOURCES})
