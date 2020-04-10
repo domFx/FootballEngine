@@ -1,6 +1,6 @@
-#include "Window.h"
+#include "Window.hpp"
 
-namespace FootballEngine {
+namespace FxEngine {
 
     Window::Window(
         const std::string& title,
@@ -50,7 +50,7 @@ namespace FootballEngine {
             return;
         }
 
-        glClearColor(1, 0, 1, 1);
+        glClearColor(1, 0, 0, 0);
         glClear(GL_COLOR_BUFFER_BIT);
 
         glfwSwapBuffers(window);

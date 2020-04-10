@@ -4,7 +4,7 @@
 
 #include <glfw/glfw3.h>
 
-namespace FootballEngine {
+namespace FxEngine {
 	class Window {
         public:
             Window(const std::string&, unsigned int, unsigned int);
